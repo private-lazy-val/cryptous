@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIGMA | Макеты для верстки — Верстка страницы</title>
+    <meta
       name="description"
       content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки"
     />
@@ -13,32 +13,150 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/base.css" />
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Начало: Данный блок удалять нельзя -->
     <div class="maketforfigma">
-        <a href="https://t.me/s/FigmaToHTML" target="_blank">
-            <img src="img/logo.png">
-        </a>
-        <div>
-            <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
-            </p>
-            <p>
-                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
-            </p>
-        </div>
+      <a href="https://t.me/s/FigmaToHTML" target="_blank">
+        <img src="img/logo.png" />
+      </a>
+      <div>
+        <p>
+          Данная верстка, была реализована пользователем в рамках обучающего
+          телеграм канал
+          <a href="https://t.me/s/FigmaToHTML" target="_blank"
+            >FIGMA | Макеты для верстки</a
+          >
+        </p>
+        <p>
+          При помощи
+          <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank"
+            >Telegram-бота</a
+          >
+          пользователь получил оплату за верстку этого макета.
+        </p>
+      </div>
     </div>
     <!-- Конец -->
 
     <div class="main">
-        <!-- Header start -->
-        <header>
+      <!-- Header start -->
+      <header class="header">
+        <nav class="nav">
+          <a class="logo" href="#">
+            <img
+              class="logo__img"
+              src="img/logos/logo.svg"
+              alt="Cryptous logo."
+              width="154"
+              height="40"
+            />
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Company</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Team</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Blog</a>
+            </li>
+          </ul>
+          <a class="nav__btn" href="#">Trade Now</a>
+          <div class="nav__menu">
+            <div class="nav__menu-line"></div>
+            <div class="nav__menu-line"></div>
+            <div class="nav__menu-line"></div>
+          </div>
+        </nav>
+        <div class="container flex-space-between">
+          <div class="header__cta center-text center-element">
+            <h1 class="header__h1">Make better businees with Cryptocurrency</h1>
+            <p class="header__p">
+              We offers users a fully operational long-term rental platform.
+              <br class="header__brake" />It plans to leverages blockchain
+              technology.
+            </p>
+            <a class="header__btn center-element" href="#">Get Whitelisted</a>
+          </div>
+          <img
+            class="header__main-img"
+            src="img/illustration.svg"
+            alt="A stack of bitcoins."
+            width="614"
+            height="474"
+          />
+          <img
+            class="header__shape-img"
+            src="img/cube-small.svg"
+            width="100"
+            height="152"
+          />
+        </div>
+        <div class="scroll-downs center-element">
+          <div class="scroll-downs__mouse">
+            <div class="scroll-downs__scroller"></div>
+          </div>
+        </div>
+      </header>
+      <!-- Header end -->
 
-        </header>
-        <!-- Header end -->
+      <!-- Main start -->
+      <main class="main">
+        <section class="prices">
+          <div class="container">
+            <h2 class="prices__h2 center-text">
+              Today's Cryptocurrency Prices
+            </h2>
+            <table class="crypto-table center-element">
+              <thead class="crypto-table__thead">
+                <tr class="crypto-table__tr">
+                  <th class="crypto-table__th crypto-table__th-flex"># </th>
+                  <th class="crypto-table__th">Name</th>
+                  <th class="crypto-table__th">Price</th>
+                  <th class="crypto-table__th">24 %</th>
+                  <th class="crypto-table__th">7d %</th>
+                  <th class="crypto-table__th crypto-table__th-flex">Market Cap <img src="img/icons/info.svg" /></th>
+                  <th class="crypto-table__th">Volume(24h)</th>
+                  <th class="crypto-table__th">Last 7 Days</th>
+                </tr>
+              </thead>
+              <tbody class="crypto-table__tbody">
+                <tr>
+                  <td><img src="img/icons/star.svg" />1</td>
+                  <td>
+                    <img src="img/icons/btc.svg" />Bitcoin <span>BTC</span>
+                  </td>
+                  <td>$55,206.61</td>
+                  <td><img src="img/icons/bull.svg" />0.92%</td>
+                  <td><img src="img/icons/bull.svg" />15.86%</td>
+                  <td>$1,046,899,935,348</td>
+                  <td>$1,046,899,935,348<span>653,452 BTC</span></td>
+                  <td>
+                    <img src="img/charts/up-trend.svg" /><img
+                      src="img/icons/three-dots.svg"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+      <!-- Main end -->
     </div>
-
-</body>
+  </body>
 </html>
