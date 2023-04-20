@@ -102,11 +102,16 @@
           <img
             class="header__shape-img"
             src="img/cube-small.svg"
+            alt=""
+            aria-hidden="true"
             width="100"
             height="152"
           />
         </div>
-        <div class="scroll-downs center-element">
+        <div
+          class="scroll-downs center-element"
+          aria-label="Page scroller element"
+        >
           <div class="scroll-downs__mouse">
             <div class="scroll-downs__scroller"></div>
           </div>
@@ -116,43 +121,412 @@
 
       <!-- Main start -->
       <main class="main">
+        <!-- Prices section -->
         <section class="prices">
           <div class="container">
             <h2 class="prices__h2 center-text">
               Today's Cryptocurrency Prices
             </h2>
-            <table class="crypto-table center-element">
-              <thead class="crypto-table__thead">
-                <tr class="crypto-table__tr">
-                  <th class="crypto-table__th crypto-table__th-flex"># </th>
-                  <th class="crypto-table__th">Name</th>
-                  <th class="crypto-table__th">Price</th>
-                  <th class="crypto-table__th">24 %</th>
-                  <th class="crypto-table__th">7d %</th>
-                  <th class="crypto-table__th crypto-table__th-flex">Market Cap <img src="img/icons/info.svg" /></th>
-                  <th class="crypto-table__th">Volume(24h)</th>
-                  <th class="crypto-table__th">Last 7 Days</th>
+            <table class="table center-element center-text">
+              <thead class="table__thead">
+                <tr class="table__thead-tr border-top">
+                  <th class="table__th table__th-sort">#</th>
+                  <th class="table__th table__th-name">Name</th>
+                  <th class="table__th table__th-price">Price</th>
+                  <th class="table__th table__th-percent-per-hour">24h %</th>
+                  <th class="table__th table__th-percent-per-day">7d %</th>
+                  <th class="table__th table__th-market-cap">Market Cap</th>
+                  <th class="table__th table__th-volume">Volume(24h)</th>
+                  <th class="table__th table__th-last-week">Last 7 Days</th>
                 </tr>
               </thead>
-              <tbody class="crypto-table__tbody">
-                <tr>
-                  <td><img src="img/icons/star.svg" />1</td>
-                  <td>
-                    <img src="img/icons/btc.svg" />Bitcoin <span>BTC</span>
+              <tbody class="table__tbody">
+                <tr class="table__tbody-tr border-top">
+                  <td class="table__td table__td-number">1</td>
+                  <td class="table__td table__td-name">
+                    <img
+                      class="table__td-logo"
+                      src="img/icons/btc.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="24"
+                      height="24"
+                    /><span class="table__td-full-name">Bitcoin</span
+                    ><abbr class="table__td-abbr">BTC</abbr>
                   </td>
-                  <td>$55,206.61</td>
-                  <td><img src="img/icons/bull.svg" />0.92%</td>
-                  <td><img src="img/icons/bull.svg" />15.86%</td>
-                  <td>$1,046,899,935,348</td>
-                  <td>$1,046,899,935,348<span>653,452 BTC</span></td>
-                  <td>
-                    <img src="img/charts/up-trend.svg" /><img
-                      src="img/icons/three-dots.svg"
-                    />
+                  <td class="table__td table__td-price">$55,206.61</td>
+                  <td class="table__td table__td-bull">0.92%</td>
+                  <td class="table__td table__td-bull">15.86%</td>
+                  <td class="table__td table__td-market-cap">
+                    $1,046,899,935,348
                   </td>
+                  <td class="table__td table__td-volume">
+                    $1,046,899,935,348<span class="table__td-volume-in-btc"
+                      >653,452 BTC</span
+                    >
+                  </td>
+                  <td class="table__td table__td-uptrend"></td>
+                </tr>
+
+                <tr class="table__tbody-tr border-top">
+                  <td class="table__td table__td-number">2</td>
+                  <td class="table__td table__td-name">
+                    <img
+                      class="table__td-logo"
+                      src="img/icons/eth.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="24"
+                      height="24"
+                    /><span class="table__td-full-name">Ethereum</span
+                    ><abbr class="table__td-abbr">ETC</abbr>
+                  </td>
+                  <td class="table__td table__td-price">$55,206.61</td>
+                  <td class="table__td table__td-bear">0.92%</td>
+                  <td class="table__td table__td-bull">15.86%</td>
+                  <td class="table__td table__td-market-cap">
+                    $1,046,899,935,348
+                  </td>
+                  <td class="table__td table__td-volume">
+                    $1,046,899,935,348<span class="table__td-volume-in-btc"
+                      >653,452 BTC</span
+                    >
+                  </td>
+                  <td class="table__td table__td-uptrend"></td>
+                </tr>
+
+                <tr class="table__tbody-tr border-top">
+                  <td class="table__td table__td-number">3</td>
+                  <td class="table__td table__td-name">
+                    <img
+                      class="table__td-logo"
+                      src="img/icons/ada.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="24"
+                      height="24"
+                    /><span class="table__td-full-name">Cardano</span
+                    ><abbr class="table__td-abbr">ADA</abbr>
+                  </td>
+                  <td class="table__td table__td-price">$55,206.61</td>
+                  <td class="table__td table__td-bear">0.92%</td>
+                  <td class="table__td table__td-bear">15.86%</td>
+                  <td class="table__td table__td-market-cap">
+                    $1,046,899,935,348
+                  </td>
+                  <td class="table__td table__td-volume">
+                    $1,046,899,935,348<span class="table__td-volume-in-btc"
+                      >653,452 BTC</span
+                    >
+                  </td>
+                  <td class="table__td table__td-downtrend"></td>
+                </tr>
+
+                <tr class="table__tbody-tr border-top">
+                  <td class="table__td table__td-number">4</td>
+                  <td class="table__td table__td-name">
+                    <img
+                      class="table__td-logo"
+                      src="img/icons/usdt.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="24"
+                      height="24"
+                    /><span class="table__td-full-name">Tether</span
+                    ><abbr class="table__td-abbr">USDT</abbr>
+                  </td>
+                  <td class="table__td table__td-price">$55,206.61</td>
+                  <td class="table__td table__td-bull">0.92%</td>
+                  <td class="table__td table__td-bull">15.86%</td>
+                  <td class="table__td table__td-market-cap">
+                    $1,046,899,935,348
+                  </td>
+                  <td class="table__td table__td-volume">
+                    $1,046,899,935,348<span class="table__td-volume-in-btc"
+                      >653,452 BTC</span
+                    >
+                  </td>
+                  <td class="table__td table__td-uptrend"></td>
+                </tr>
+
+                <tr class="table__tbody-tr border-top">
+                  <td class="table__td table__td-number">5</td>
+                  <td class="table__td table__td-name">
+                    <img
+                      class="table__td-logo"
+                      src="img/icons/avax.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="24"
+                      height="24"
+                    /><span class="table__td-full-name">Avalanche</span
+                    ><abbr class="table__td-abbr">AVAX</abbr>
+                  </td>
+                  <td class="table__td table__td-price">$55,206.61</td>
+                  <td class="table__td table__td-bear">0.92%</td>
+                  <td class="table__td table__td-bear">15.86%</td>
+                  <td class="table__td table__td-market-cap">
+                    $1,046,899,935,348
+                  </td>
+                  <td class="table__td table__td-volume">
+                    $1,046,899,935,348<span class="table__td-volume-in-btc"
+                      >653,452 BTC</span
+                    >
+                  </td>
+                  <td class="table__td table__td-downtrend"></td>
+                </tr>
+
+                <tr class="table__tbody-tr border-top">
+                  <td class="table__td table__td-number">6</td>
+                  <td class="table__td table__td-name">
+                    <img
+                      class="table__td-logo"
+                      src="img/icons/algo.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="24"
+                      height="24"
+                    /><span class="table__td-full-name">Algorand</span
+                    ><abbr class="table__td-abbr">ALGO</abbr>
+                  </td>
+                  <td class="table__td table__td-price">$55,206.61</td>
+                  <td class="table__td table__td-bull">0.92%</td>
+                  <td class="table__td table__td-bull">15.86%</td>
+                  <td class="table__td table__td-market-cap">
+                    $1,046,899,935,348
+                  </td>
+                  <td class="table__td table__td-volume">
+                    $1,046,899,935,348<span class="table__td-volume-in-btc"
+                      >653,452 BTC</span
+                    >
+                  </td>
+                  <td class="table__td table__td-uptrend"></td>
                 </tr>
               </tbody>
             </table>
+          </div>
+        </section>
+
+        <!-- Perks section -->
+        <section class="perks">
+          <div class="container">
+            <h2 class="perks__h2 center-text">
+              The most trusted cryptocurrency platform
+            </h2>
+            <article class="perks__content">
+              <div class="perks__content-block">
+                <img
+                  class="perks__img"
+                  src="img/btc-usd.svg"
+                  aria-hidden="true"
+                  alt=""
+                  width="66"
+                  height="69"
+                />
+                <h3 class="perks__h3">Ease of Trading</h3>
+                <ul class="perks__list">
+                  <li class="perks__item">Intuitive interface</li>
+                  <li class="perks__item">Instant deposit options</li>
+                  <li class="perks__item">
+                    Cash out directly to your bank account
+                  </li>
+                </ul>
+              </div>
+
+              <div class="perks__content-block">
+                <img
+                  class="perks__img"
+                  src="img/lock.svg"
+                  aria-hidden="true"
+                  alt=""
+                  width="65"
+                  height="69"
+                />
+                <h3 class="perks__h3">Institutional-grade Security</h3>
+                <ul class="perks__list">
+                  <li class="perks__item">
+                    98% of assets stored safely offline
+                  </li>
+                  <li class="perks__item">Highly encrypted personal data</li>
+                  <li class="perks__item">
+                    Whitelisting and transaction confirmations
+                  </li>
+                </ul>
+              </div>
+
+              <div class="perks__content-block">
+                <img
+                  class="perks__img"
+                  src="img/rocket.svg"
+                  aria-hidden="true"
+                  alt=""
+                  width="112"
+                  height="70"
+                />
+                <h3 class="perks__h3">Proven Reliability</h3>
+                <ul class="perks__list">
+                  <li class="perks__item">Exchanging bitcoin since 2011</li>
+                  <li class="perks__item">Industry-leading uptime</li>
+                  <li class="perks__item">24/7 dedicated support</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Download section -->
+        <section class="download">
+          <div class="container">
+            <div class="download__content">
+              <div class="download__text center-text">
+                <h2 class="download__h2">
+                  Try the future, today.<br />Download Crypto
+                </h2>
+                <p class="download__p">
+                  Stay connected to the market with our mobile app. Featuring
+                  advanced order types and analytical tools for experienced
+                  traders, as well as a simple buy & sell interface for those
+                  just getting started.
+                </p>
+              </div>
+              <div class="download__img-container">
+                <img
+                  class="download__img center-element"
+                  src="img/app.png"
+                  aria-hidden="true"
+                  alt=""
+                  width="456"
+                  height="485"
+                />
+              </div>
+            </div>
+            <div class="download__stores">
+              <a class="download__link" href="#">
+                <img
+                  class="download__store"
+                  src="img/logos/app-store.svg"
+                  alt="Download from Apple Store."
+                  width="169"
+                  height="55"
+                />
+              </a>
+              <a class="download__link" href="#">
+                <img
+                  class="download__store"
+                  src="img/logos/google-play.svg"
+                  alt="Download from Google Play."
+                  width="169"
+                  height="55"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- News section -->
+        <section class="news">
+          <div class="container">
+            <h2 class="news__h2">Learn to thrive</h2>
+
+            <div class="cards">
+              <a class="card__link" href="#">
+                <article class="card">
+                  <img
+                    class="card__image"
+                    src="img/crypto-368x207.png"
+                    aria-hidden="true"
+                    alt=""
+                    width="368"
+                    height="207"
+                  />
+                  <div class="card__container">
+                    <h4 class="card__h4">
+                      New Leveraged Pairs Added to Margin Trading on the
+                      Crypto.com Exchange
+                    </h4>
+                    <p class="card__p">
+                      We urge everyone adopt good cybersecurity habits, and to
+                      have unique passwords on every site they use...
+                    </p>
+                    <div class="card__footer">
+                      <span class="card__author">Jennia Peris</span>
+                      <time datetime="2021-07-15" class="card__date"
+                        >15/07/2021</time
+                      >
+                      <span class="card__read-time">5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+
+              <a class="card__link" href="#">
+                <article class="card">
+                  <img
+                    class="card__image"
+                    src="img/crypto-chart-368x207.png"
+                    aria-hidden="true"
+                    alt=""
+                    width="368"
+                    height="207"
+                  />
+                  <div class="card__container">
+                    <h4 class="card__h4">
+                      New Leveraged Pairs Added to Margin Trading on the
+                      Crypto.com Exchange
+                    </h4>
+                    <p class="card__p">
+                      We urge everyone adopt good cybersecurity habits, and to
+                      have unique passwords on every site they use...
+                    </p>
+                    <div class="card__footer">
+                      <span class="card__author">Jennia Peris</span>
+                      <time datetime="2021-07-15" class="card__date"
+                        >15/07/2021</time
+                      >
+                      <span class="card__read-time">5</span>
+                    </div>
+                  </div>
+                </article></a
+              >
+
+              <a class="card__link" href="#">
+                <article class="card">
+                  <img
+                    class="card__image"
+                    src="img/crypto-coins-368x207.png"
+                    aria-hidden="true"
+                    alt=""
+                    width="368"
+                    height="207"
+                  />
+                  <div class="card__container">
+                    <h4 class="card__h4">
+                      New Leveraged Pairs Added to Margin Trading on the
+                      Crypto.com Exchange
+                    </h4>
+                    <p class="card__p">
+                      We urge everyone adopt good cybersecurity habits, and to
+                      have unique passwords on every site they use...
+                    </p>
+                    <div class="card__footer">
+                      <span class="card__author">Jennia Peris</span>
+                      <time datetime="2021-07-15" class="card__date"
+                        >15/07/2021</time
+                      >
+                      <span class="card__read-time">5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Subscribe section-->
+        <section class="subscribe">
+          <div class="container">
+            <h2>Never miss a drop</h2>
+            <p>Subscribe for the latest news, drops & collectibles</p>
           </div>
         </section>
       </main>
