@@ -164,6 +164,13 @@ body {
 .logo {
   max-width: 123px;
   height: 30px;
+  transition: transform .3s ease-in-out;
+  -webkit-transition: transform .3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 
 .nav {
@@ -180,6 +187,15 @@ body {
 
 .nav__menu {
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.nav__menu:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 
 .nav__menu-line {
@@ -227,7 +243,17 @@ body {
   border-radius: 50px;
   white-space: nowrap;
   max-width: 136px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
 }
+
+.header__btn:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
 
 .header__img,
 .header__background-img,
@@ -449,7 +475,17 @@ body {
 .download__store {
   max-width: 100px;
   aspect-ratio: 29 / 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
 }
+
+.download__store:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
 
 /* NEWS */
 .news {
@@ -477,6 +513,15 @@ body {
   background: var(--text-white-clr);
   border-radius: 10px;
   max-width: 343px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 
 .cards__link {
@@ -616,7 +661,7 @@ body {
   color: var(--text-white-clr);
 }
 
-.form__submit-btn {
+.form__subscribe-btn {
   background: var(--background-btn-clr);
   font-family: var(--ff-poppins-ss);
   font-weight: var(--fw-medium);
@@ -629,6 +674,15 @@ body {
   width: 139px;
   border-radius: 37px;
   padding: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.form__subscribe-btn:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 
 /* || FOOTER */
@@ -677,6 +731,13 @@ body {
   color: var(--footer-links-clr);
   opacity: var(--footer-links-opacity);
   white-space: nowrap;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+}
+
+.footer__link:hover {
+  opacity: var(--hover-opacity);
+  padding-left: 6px;
 }
 
 .footer__col:nth-child(4) {
@@ -702,6 +763,18 @@ body {
   justify-content: center;
 }
 
+.social-media__icon {
+  width: 31px;
+  height: 32px;
+  transition: transform .3s ease-in-out;
+  -webkit-transition: transform .3s ease-in-out;
+}
+
+.social-media__icon:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
 .footer__icon {
   width: 31px;
   height: 32px;
@@ -719,6 +792,13 @@ body {
 .copyright__link {
   text-decoration: none;
   color: var(--copyright-clr);
+  transition: opacity .4s linear;
+  -webkit-transition: opacity .4s linear;
+  cursor: pointer;
+}
+
+.copyright__link:hover {
+  opacity: var(--hover-opacity);
 }
 
 
@@ -896,7 +976,6 @@ body {
 
   /* || MAIN */
   /* PRICES */
-
   .prices__h2 {
     margin: 0 0 60px;
   }
@@ -1024,6 +1103,12 @@ body {
     font-weight: var(--fw-regular);
     font-size: 17px;
     line-height: 1.4;
+    transition: opacity .4s linear;
+    -webkit-transition: opacity .4s linear;
+  }
+
+  .nav__item:hover {
+    opacity: var(--hover-opacity);
   }
 
   .nav__link {
@@ -1051,6 +1136,15 @@ body {
     border-radius: 50px;
     white-space: nowrap;
     max-width: 152px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+  }
+
+  .nav__btn:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
   }
 
   .logo {
@@ -1180,10 +1274,6 @@ body {
     opacity: var(--hover-opacity);
   }
 
-  .table__settings-button:active {
-    opacity: var(--active-opacity);
-  }
-
   .table__td-downtrend::before {
     content: url(../img/charts/down-trend.svg);
     width: 123px;
@@ -1202,7 +1292,6 @@ body {
     justify-content: space-between;
     margin-top: 60px;
     gap: 10px;
-    white-space: wrap;
   }
 
   .perks__container {
@@ -1242,7 +1331,7 @@ body {
     right: -10px;
     z-index: -1;
   }
-  
+
   .download__text {
     text-align: left;
   }
@@ -1357,7 +1446,7 @@ body {
     padding: 22px 17px;
   }
 
-  .form__submit-btn {
+  .form__subscribe-btn {
     font-size: 17px;
     line-height: 1.4;
     border-radius: 31px;
