@@ -42,7 +42,7 @@
     <div class="main">
       <!-- Header start -->
       <header class="header">
-        <nav class="nav">
+        <nav class="nav" aria-label="primary navigation">
           <a class="logo" href="#">
             <img
               class="logo__img"
@@ -82,36 +82,30 @@
             <div class="nav__menu-line"></div>
           </div>
         </nav>
-        <div class="container flex-space-between">
-          <div class="header__cta center-text center-element">
-            <h1 class="header__h1">Make better businees with Cryptocurrency</h1>
-            <p class="header__p">
-              We offers users a fully operational long-term rental platform.
-              <br class="header__brake" />It plans to leverages blockchain
-              technology.
-            </p>
-            <a class="header__btn center-element" href="#">Get Whitelisted</a>
+        <div class="container">
+          <div class="header__content">
+            <div class="header__cta center-text">
+              <h1 class="header__h1 center-element">
+                Make better businees with Cryptocurrency
+              </h1>
+              <p class="header__p">
+                We offers users a fully operational long-term rental platform.
+                <br class="header__brake" />It plans to leverages blockchain
+                technology.
+              </p>
+              <a class="header__btn center-element" href="#">Get Whitelisted</a>
+            </div>
+            <div class="header__img center-element">
+              <img
+                src="img/header-illustration.png"
+                alt="A stack of bitcoins."
+                width="271"
+                height="398"
+              />
+            </div>
           </div>
-          <img
-            class="header__main-img"
-            src="img/illustration.svg"
-            alt="A stack of bitcoins."
-            width="614"
-            height="474"
-          />
-          <img
-            class="header__shape-img"
-            src="img/cube-small.svg"
-            alt=""
-            aria-hidden="true"
-            width="100"
-            height="152"
-          />
         </div>
-        <div
-          class="scroll-downs center-element"
-          aria-label="Page scroller element"
-        >
+        <div class="scroll-downs center-element">
           <div class="scroll-downs__mouse">
             <div class="scroll-downs__scroller"></div>
           </div>
@@ -124,20 +118,35 @@
         <!-- Prices section -->
         <section class="prices">
           <div class="container">
-            <h2 class="prices__h2 center-text">
+            <h2 class="prices__h2 center-text" id="crypto_prices_table">
               Today's Cryptocurrency Prices
             </h2>
-            <table class="table center-element center-text">
+            <table
+              class="table center-element center-text"
+              aria-label="crypto prices"
+              aria-describedby="crypto_prices_table"
+              aria-rowcount="6"
+            >
               <thead class="table__thead">
                 <tr class="table__thead-tr border-top">
-                  <th class="table__th table__th-sort">#</th>
-                  <th class="table__th table__th-name">Name</th>
-                  <th class="table__th table__th-price">Price</th>
-                  <th class="table__th table__th-percent-per-hour">24h %</th>
-                  <th class="table__th table__th-percent-per-day">7d %</th>
-                  <th class="table__th table__th-market-cap">Market Cap</th>
-                  <th class="table__th table__th-volume">Volume(24h)</th>
-                  <th class="table__th table__th-last-week">Last 7 Days</th>
+                  <th class="table__th table__th-sort" scope="col">#</th>
+                  <th class="table__th table__th-name" scope="col">Name</th>
+                  <th class="table__th table__th-price" scope="col">Price</th>
+                  <th class="table__th table__th-percent-per-hour" scope="col">
+                    24h %
+                  </th>
+                  <th class="table__th table__th-percent-per-day" scope="col">
+                    7d %
+                  </th>
+                  <th class="table__th table__th-market-cap" scope="col">
+                    Market Cap
+                  </th>
+                  <th class="table__th table__th-volume" scope="col">
+                    Volume(24h)
+                  </th>
+                  <th class="table__th table__th-last-week" scope="col">
+                    Last 7 Days
+                  </th>
                 </tr>
               </thead>
               <tbody class="table__tbody">
@@ -313,8 +322,8 @@
             <h2 class="perks__h2 center-text">
               The most trusted cryptocurrency platform
             </h2>
-            <article class="perks__content">
-              <div class="perks__content-block">
+            <article class="perks__content" aria-label="why choose out platform">
+              <section class="perks__container">
                 <img
                   class="perks__img"
                   src="img/btc-usd.svg"
@@ -331,9 +340,9 @@
                     Cash out directly to your bank account
                   </li>
                 </ul>
-              </div>
+              </section>
 
-              <div class="perks__content-block">
+              <section class="perks__container">
                 <img
                   class="perks__img"
                   src="img/lock.svg"
@@ -352,9 +361,9 @@
                     Whitelisting and transaction confirmations
                   </li>
                 </ul>
-              </div>
+              </section>
 
-              <div class="perks__content-block">
+              <section class="perks__container">
                 <img
                   class="perks__img"
                   src="img/rocket.svg"
@@ -369,7 +378,7 @@
                   <li class="perks__item">Industry-leading uptime</li>
                   <li class="perks__item">24/7 dedicated support</li>
                 </ul>
-              </div>
+              </section>
             </article>
           </div>
         </section>
@@ -389,16 +398,14 @@
                   just getting started.
                 </p>
               </div>
-              <div class="download__img-container">
-                <img
-                  class="download__img center-element"
-                  src="img/app.png"
-                  aria-hidden="true"
-                  alt=""
-                  width="456"
-                  height="485"
-                />
-              </div>
+              <img
+                class="download__img center-element"
+                src="img/app.png"
+                aria-hidden="true"
+                alt=""
+                width="456"
+                height="485"
+              />
             </div>
             <div class="download__stores">
               <a class="download__link" href="#">
@@ -420,16 +427,24 @@
                 />
               </a>
             </div>
+            <img
+              class="download__background-img"
+              src="img/circle-shape.svg"
+              alt=""
+              aria-hidden="true"
+              width="127"
+              height="127"
+            />
           </div>
         </section>
 
         <!-- News section -->
         <section class="news">
           <div class="container">
-            <h2 class="news__h2">Learn to thrive</h2>
+            <h2 class="news__h2 center-text">Learn to thrive</h2>
 
             <div class="cards">
-              <a class="card__link" href="#">
+              <a class="cards__link" href="#">
                 <article class="card">
                   <img
                     class="card__image"
@@ -440,10 +455,10 @@
                     height="207"
                   />
                   <div class="card__container">
-                    <h4 class="card__h4">
+                    <h3 class="card__h3">
                       New Leveraged Pairs Added to Margin Trading on the
                       Crypto.com Exchange
-                    </h4>
+                    </h3>
                     <p class="card__p">
                       We urge everyone adopt good cybersecurity habits, and to
                       have unique passwords on every site they use...
@@ -459,7 +474,7 @@
                 </article>
               </a>
 
-              <a class="card__link" href="#">
+              <a class="cards__link" href="#">
                 <article class="card">
                   <img
                     class="card__image"
@@ -470,10 +485,10 @@
                     height="207"
                   />
                   <div class="card__container">
-                    <h4 class="card__h4">
+                    <h3 class="card__h3">
                       New Leveraged Pairs Added to Margin Trading on the
                       Crypto.com Exchange
-                    </h4>
+                    </h3>
                     <p class="card__p">
                       We urge everyone adopt good cybersecurity habits, and to
                       have unique passwords on every site they use...
@@ -489,7 +504,7 @@
                 </article></a
               >
 
-              <a class="card__link" href="#">
+              <a class="cards__link" href="#">
                 <article class="card">
                   <img
                     class="card__image"
@@ -500,10 +515,10 @@
                     height="207"
                   />
                   <div class="card__container">
-                    <h4 class="card__h4">
+                    <h3 class="card__h3">
                       New Leveraged Pairs Added to Margin Trading on the
                       Crypto.com Exchange
-                    </h4>
+                    </h3>
                     <p class="card__p">
                       We urge everyone adopt good cybersecurity habits, and to
                       have unique passwords on every site they use...
@@ -524,13 +539,182 @@
 
         <!-- Subscribe section-->
         <section class="subscribe">
-          <div class="container">
-            <h2>Never miss a drop</h2>
-            <p>Subscribe for the latest news, drops & collectibles</p>
+          <div class="container center-text">
+            <h2 class="subscribe__h2">Never miss a drop</h2>
+            <p class="subscribe__p">
+              Subscribe for the latest news, drops & collectibles
+            </p>
+            <form
+              action="https://httpbin.org/post"
+              method="post"
+              class="form center-element"
+            >
+              <div class="form__item">
+                <input
+                  class="form__input"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  aria-label="email"
+                />
+              </div>
+              <button class="form__submit-btn" type="submit">Subscribe</button>
+            </form>
           </div>
         </section>
       </main>
       <!-- Main end -->
+
+      <!-- Footer start -->
+      <footer class="footer">
+        <div class="container">
+          <nav class="footer__nav" aria-label="secondary navigation">
+            <section class="footer__col">
+              <h3 class="footer__h3">Company</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">About Us</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Terms of Use</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Privacy Policy</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Disclaimer</a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="footer__col">
+              <h3 class="footer__h3">Blockchain</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Chain Explorer</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">The Syndicate</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Security</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Cryptous Credit</a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="footer__col">
+              <h3 class="footer__h3">Resources</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Prices</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Site Widgets</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Tax</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Blog</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Research</a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="footer__col">
+              <h3 class="footer__h3">Businesses</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Prime</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Custody</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Asset Hub</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Commerce</a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="footer__col">
+              <h3 class="footer__h3">Exchange</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Exchange Home</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Margin Trading</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Derivatives Trading</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Trading Arena</a>
+                </li>
+              </ul>
+            </section>
+          </nav>
+          <div class="horizontal-line"></div>
+          <div class="footer__bottom">
+            <div class="social-media">
+            <ul class="social-media__list">
+              <li class="social-media__item">
+                <a href="https://www.facebook.com/" class="social-media__link"
+                  ><img
+                    class="social-media__icon"
+                    src="img/icons/fb.svg"
+                    width="31"
+                    height="32"
+                    alt="Facebook."
+                /></a>
+              </li>
+              <li class="social-media__item">
+                <a href="https://twitter.com/" class="social-media__link"
+                  ><img
+                    class="social-media__icon"
+                    src="img/icons/twitter.svg"
+                    width="31"
+                    height="32"
+                    alt="Twitter."
+                /></a>
+              </li>
+              <li class="social-media__item">
+                <a href="https://www.linkedin.com/" class="social-media__link"
+                  ><img
+                    class="social-media__icon"
+                    src="img/icons/linkedin.svg"
+                    width="31"
+                    height="32"
+                    alt="Linkedin."
+                /></a>
+              </li>
+              <li class="social-media__item">
+                <a href="https://www.instagram.com/" class="social-media__link"
+                  ><img
+                    class="social-media__icon"
+                    src="img/icons/instagram.svg"
+                    width="31"
+                    height="32"
+                    alt="Instagram."
+                /></a>
+              </li>
+            </ul>
+          </div>
+            <p class="footer__copyright center-text">
+              Copyright 2021, Cryptous
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer end -->
     </div>
   </body>
 </html>
