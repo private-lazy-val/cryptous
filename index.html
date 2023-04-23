@@ -129,7 +129,9 @@
             >
               <thead class="table__thead">
                 <tr class="table__thead-tr border-top">
-                  <th class="table__th table__th-sort" scope="col">#</th>
+                  <th class="table__th table__th-sort" scope="col">
+                    #<button type="button" class="table__sort-button"></button>
+                  </th>
                   <th class="table__th table__th-name" scope="col">Name</th>
                   <th class="table__th table__th-price" scope="col">Price</th>
                   <th class="table__th table__th-percent-per-hour" scope="col">
@@ -139,7 +141,10 @@
                     7d %
                   </th>
                   <th class="table__th table__th-market-cap" scope="col">
-                    Market Cap
+                    Market Cap<button
+                      type="button"
+                      class="table__info-button"
+                    ></button>
                   </th>
                   <th class="table__th table__th-volume" scope="col">
                     Volume(24h)
@@ -151,7 +156,9 @@
               </thead>
               <tbody class="table__tbody">
                 <tr class="table__tbody-tr border-top">
-                  <td class="table__td table__td-number">1</td>
+                  <td class="table__td table__td-number">
+                    <button type="button" class="table__like-button"></button>1
+                  </td>
                   <td class="table__td table__td-name">
                     <img
                       class="table__td-logo"
@@ -174,11 +181,18 @@
                       >653,452 BTC</span
                     >
                   </td>
-                  <td class="table__td table__td-uptrend"></td>
+                  <td class="table__td table__td-uptrend">
+                    <button
+                      type="button"
+                      class="table__settings-button"
+                    ></button>
+                  </td>
                 </tr>
 
                 <tr class="table__tbody-tr border-top">
-                  <td class="table__td table__td-number">2</td>
+                  <td class="table__td table__td-number">
+                    <button type="button" class="table__like-button"></button>2
+                  </td>
                   <td class="table__td table__td-name">
                     <img
                       class="table__td-logo"
@@ -201,11 +215,18 @@
                       >653,452 BTC</span
                     >
                   </td>
-                  <td class="table__td table__td-uptrend"></td>
+                  <td class="table__td table__td-uptrend">
+                    <button
+                      type="button"
+                      class="table__settings-button"
+                    ></button>
+                  </td>
                 </tr>
 
                 <tr class="table__tbody-tr border-top">
-                  <td class="table__td table__td-number">3</td>
+                  <td class="table__td table__td-number">
+                    <button type="button" class="table__like-button"></button>3
+                  </td>
                   <td class="table__td table__td-name">
                     <img
                       class="table__td-logo"
@@ -228,11 +249,18 @@
                       >653,452 BTC</span
                     >
                   </td>
-                  <td class="table__td table__td-downtrend"></td>
+                  <td class="table__td table__td-downtrend">
+                    <button
+                      type="button"
+                      class="table__settings-button"
+                    ></button>
+                  </td>
                 </tr>
 
                 <tr class="table__tbody-tr border-top">
-                  <td class="table__td table__td-number">4</td>
+                  <td class="table__td table__td-number">
+                    <button type="button" class="table__like-button"></button>4
+                  </td>
                   <td class="table__td table__td-name">
                     <img
                       class="table__td-logo"
@@ -255,11 +283,18 @@
                       >653,452 BTC</span
                     >
                   </td>
-                  <td class="table__td table__td-uptrend"></td>
+                  <td class="table__td table__td-uptrend">
+                    <button
+                      type="button"
+                      class="table__settings-button"
+                    ></button>
+                  </td>
                 </tr>
 
                 <tr class="table__tbody-tr border-top">
-                  <td class="table__td table__td-number">5</td>
+                  <td class="table__td table__td-number">
+                    <button type="button" class="table__like-button"></button>5
+                  </td>
                   <td class="table__td table__td-name">
                     <img
                       class="table__td-logo"
@@ -282,11 +317,18 @@
                       >653,452 BTC</span
                     >
                   </td>
-                  <td class="table__td table__td-downtrend"></td>
+                  <td class="table__td table__td-downtrend">
+                    <button
+                      type="button"
+                      class="table__settings-button"
+                    ></button>
+                  </td>
                 </tr>
 
                 <tr class="table__tbody-tr border-top">
-                  <td class="table__td table__td-number">6</td>
+                  <td class="table__td table__td-number">
+                    <button type="button" class="table__like-button"></button>6
+                  </td>
                   <td class="table__td table__td-name">
                     <img
                       class="table__td-logo"
@@ -309,7 +351,12 @@
                       >653,452 BTC</span
                     >
                   </td>
-                  <td class="table__td table__td-uptrend"></td>
+                  <td class="table__td table__td-uptrend">
+                    <button
+                      type="button"
+                      class="table__settings-button"
+                    ></button>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -322,7 +369,10 @@
             <h2 class="perks__h2 center-text">
               The most trusted cryptocurrency platform
             </h2>
-            <article class="perks__content" aria-label="why choose out platform">
+            <article
+              class="perks__content"
+              aria-label="why choose out platform"
+            >
               <section class="perks__container">
                 <img
                   class="perks__img"
@@ -427,14 +477,6 @@
                 />
               </a>
             </div>
-            <img
-              class="download__background-img"
-              src="img/circle-shape.svg"
-              alt=""
-              aria-hidden="true"
-              width="127"
-              height="127"
-            />
           </div>
         </section>
 
@@ -665,51 +707,53 @@
           <div class="horizontal-line"></div>
           <div class="footer__bottom">
             <div class="social-media">
-            <ul class="social-media__list">
-              <li class="social-media__item">
-                <a href="https://www.facebook.com/" class="social-media__link"
-                  ><img
-                    class="social-media__icon"
-                    src="img/icons/fb.svg"
-                    width="31"
-                    height="32"
-                    alt="Facebook."
-                /></a>
-              </li>
-              <li class="social-media__item">
-                <a href="https://twitter.com/" class="social-media__link"
-                  ><img
-                    class="social-media__icon"
-                    src="img/icons/twitter.svg"
-                    width="31"
-                    height="32"
-                    alt="Twitter."
-                /></a>
-              </li>
-              <li class="social-media__item">
-                <a href="https://www.linkedin.com/" class="social-media__link"
-                  ><img
-                    class="social-media__icon"
-                    src="img/icons/linkedin.svg"
-                    width="31"
-                    height="32"
-                    alt="Linkedin."
-                /></a>
-              </li>
-              <li class="social-media__item">
-                <a href="https://www.instagram.com/" class="social-media__link"
-                  ><img
-                    class="social-media__icon"
-                    src="img/icons/instagram.svg"
-                    width="31"
-                    height="32"
-                    alt="Instagram."
-                /></a>
-              </li>
-            </ul>
-          </div>
-            <p class="footer__copyright center-text">
-              Copyright 2021, Cryptous
+              <ul class="social-media__list">
+                <li class="social-media__item">
+                  <a href="https://www.facebook.com/" class="social-media__link"
+                    ><img
+                      class="social-media__icon"
+                      src="img/icons/fb.svg"
+                      width="31"
+                      height="32"
+                      alt="Facebook."
+                  /></a>
+                </li>
+                <li class="social-media__item">
+                  <a href="https://twitter.com/" class="social-media__link"
+                    ><img
+                      class="social-media__icon"
+                      src="img/icons/twitter.svg"
+                      width="31"
+                      height="32"
+                      alt="Twitter."
+                  /></a>
+                </li>
+                <li class="social-media__item">
+                  <a href="https://www.linkedin.com/" class="social-media__link"
+                    ><img
+                      class="social-media__icon"
+                      src="img/icons/linkedin.svg"
+                      width="31"
+                      height="32"
+                      alt="Linkedin."
+                  /></a>
+                </li>
+                <li class="social-media__item">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="social-media__link"
+                    ><img
+                      class="social-media__icon"
+                      src="img/icons/instagram.svg"
+                      width="31"
+                      height="32"
+                      alt="Instagram."
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <p class="copyright center-text">
+              Copyright 2021, <a class="copyright__link" href="#">Cryptous</a>
             </p>
           </div>
         </div>

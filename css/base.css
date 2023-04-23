@@ -64,6 +64,11 @@ img {
   --footer-links-clr: #E6E6E6;
   --copyright-clr: #BCBCBC;
 
+  /* OPACITY */
+  --hover-opacity: .5;
+  --active-opacity: 1;
+  --footer-links-opacity: .8;
+
   /* BORDERS */
   --btn-border-orange: 2px solid #EB5757;
   --form-border-white: 2px solid #FFF;
@@ -171,6 +176,10 @@ body {
 .nav__list,
 .nav__btn {
   display: none;
+}
+
+.nav__menu {
+  cursor: pointer;
 }
 
 .nav__menu-line {
@@ -302,6 +311,7 @@ body {
   height: 24px;
   vertical-align: middle;
   transform: translateY(-10%);
+  -webkit-transform: translateY(-10%);
 }
 
 .table__td-full-name {
@@ -321,6 +331,7 @@ body {
 
 .table__td-volume {
   transform: translateY(6%);
+  -webkit-transform: translateY(6%);
   text-align: right;
 }
 
@@ -533,6 +544,7 @@ body {
   height: 10px;
   display: inline-block;
   transform: translateY(10%);
+  -webkit-transform: translateY(10%);
 }
 
 .card__read-time::before {
@@ -542,6 +554,7 @@ body {
   height: 10px;
   display: inline-block;
   transform: translateY(10%);
+  -webkit-transform: translateY(10%);
 }
 
 .card__read-time::after {
@@ -662,7 +675,7 @@ body {
   font-size: 14px;
   line-height: .7;
   color: var(--footer-links-clr);
-  opacity: 0.8;
+  opacity: var(--footer-links-opacity);
   white-space: nowrap;
 }
 
@@ -694,13 +707,18 @@ body {
   height: 32px;
 }
 
-.footer__copyright {
+.copyright {
   font-family: var(--ff-inter-ss);
   font-weight: var(--fw-regular);
   font-size: 14px;
   line-height: 1.2;
   color: var(--copyright-clr);
   margin: 0;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: var(--copyright-clr);
 }
 
 
@@ -731,14 +749,17 @@ body {
     text-align: right;
   }
 
-  .table__th-sort::after {
-    content: url("../img/icons/arrow.svg");
+  .table__sort-button {
+    background-image: url(../img/icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
     width: 5px;
     height: 4px;
-    display: inline-block;
-    vertical-align: middle;
     margin-left: 3px;
-    transform: translateY(-200%);
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    cursor: pointer;
   }
 
   .table__td-number {
@@ -747,14 +768,26 @@ body {
     color: var(--text-light-gray-clr);
   }
 
-  .table__td-number::before {
-    content: url(../img/icons/star.svg);
+  .table__like-button {
+    background-image: url(../img/icons/star.svg);
+    background-color: transparent;
+    border: 0;
     width: 12px;
     height: 12px;
-    display: inline-block;
     margin-right: 12px;
-    vertical-align: middle;
-    transform: translateY(-25%);
+    transform: translateY(-5%);
+    -webkit-transform: translateY(-5%);
+    transition: opacity .4s linear;
+    -webkit-transition: opacity .4s linear;
+    cursor: pointer;
+  }
+
+  .table__like-button:hover {
+    opacity: var(--hover-opacity);
+  }
+
+  .table__like-button:active {
+    opacity: var(--active-opacity);
   }
 
   /* DOWNLOAD */
@@ -807,6 +840,7 @@ body {
 
   .header__img {
     transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
     max-width: 271px;
     width: 70%;
   }
@@ -816,6 +850,7 @@ body {
     width: 20px;
     height: 50px;
     transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
     margin-top: 20px;
     cursor: pointer;
   }
@@ -847,11 +882,13 @@ body {
 
     10% {
       transform: translateY(0);
-      opacity: 1;
+      -webkit-transform: translateY(0);
+      opacity: var(--active-opacity);
     }
 
     100% {
       transform: translateY(15px);
+      -webkit-transform: translateY(15px);
       opacity: 0;
     }
   }
@@ -897,6 +934,7 @@ body {
     margin-right: 7px;
     vertical-align: middle;
     transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
   }
 
   .table__td-bear {
@@ -914,6 +952,7 @@ body {
     margin-right: 7px;
     vertical-align: middle;
     transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
   }
 
   /* DOWNLOAD */
@@ -951,7 +990,7 @@ body {
     justify-content: space-between;
   }
 
-  .footer__copyright {
+  .copyright {
     order: -1;
   }
 }
@@ -1016,6 +1055,7 @@ body {
 
   .logo {
     transform: translateY(-30%);
+    -webkit-transform: translateY(-30%);
     max-width: 154px;
     height: 40px;
   }
@@ -1095,14 +1135,23 @@ body {
     border-bottom: var(--tb-border-gray);
   }
 
-  .table__th-market-cap::after {
-    content: url("../img/icons/info.svg");
-    width: 14px;
-    height: 14px;
-    display: inline-block;
-    vertical-align: middle;
+  .table__info-button {
+    background-image: url(../img/icons/info.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    width: 16px;
+    height: 16px;
     margin-left: 10px;
-    transform: translateY(-10%);
+    transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+    cursor: pointer;
+    transition: opacity .4s linear;
+    -webkit-transition: opacity .4s linear;
+  }
+
+  .table__info-button:hover {
+    opacity: var(--hover-opacity);
   }
 
   .table__td-uptrend::before {
@@ -1113,13 +1162,26 @@ body {
     vertical-align: middle;
   }
 
-  .table__td-uptrend::after {
-    content: url(../img/icons/three-dots.svg);
+  .table__settings-button {
+    background-image: url(../img/icons/three-dots.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
     width: 3px;
     height: 13px;
-    display: inline-block;
     margin-left: 10px;
-    vertical-align: middle;
+    vertical-align: bottom;
+    cursor: pointer;
+    transition: opacity .4s linear;
+    -webkit-transition: opacity .4s linear;
+  }
+
+  .table__settings-button:hover {
+    opacity: var(--hover-opacity);
+  }
+
+  .table__settings-button:active {
+    opacity: var(--active-opacity);
   }
 
   .table__td-downtrend::before {
@@ -1127,15 +1189,6 @@ body {
     width: 123px;
     height: 29px;
     display: inline-block;
-    vertical-align: middle;
-  }
-
-  .table__td-downtrend::after {
-    content: url(../img/icons/three-dots.svg);
-    width: 3px;
-    height: 13px;
-    display: inline-block;
-    margin-left: 10px;
     vertical-align: middle;
   }
 
@@ -1180,6 +1233,16 @@ body {
     padding: 106px 135px 182px;
   }
 
+  .download .container::before {
+    content: url(../img/circle-shape.svg);
+    width: 127px;
+    height: 127px;
+    position: absolute;
+    top: 12px;
+    right: -10px;
+    z-index: -1;
+  }
+  
   .download__text {
     text-align: left;
   }
