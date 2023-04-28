@@ -3,10 +3,10 @@
 
 ## Table of Contents
 
-1. [Overview](#overview)
+[Overview](#overview)
    - [Figma](#figma)
    - [Hosting](#hosting)
-2. [Technologies](#technologies)
+   - [Technologies](#technologies)
 
 ## Overview
 
@@ -20,9 +20,9 @@ The design prototype for this project was created using Figma. You can view the 
 
 Cryptous project is hosted on GitHub Pages. You can view the live sites here:
 
-- [https://private-lazy-val.github.io/mesto-project/](https://private-lazy-val.github.io/cryptous/)
+- [https://private-lazy-val.github.io/cryptous/](https://private-lazy-val.github.io/cryptous/)
 
-## Technologies
+### Technologies
 
 The following technologies were used to develop this project:
 
