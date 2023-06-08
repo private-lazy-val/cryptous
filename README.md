@@ -1,12 +1,10 @@
-# Верстка макета
-Источник макета Telegram-канал [FIGMA | Макеты для верстки](https://t.me/+oXZSKMmXp6UyOGI6)
-
 ## Table of Contents
 
 [Overview](#overview)
-   - [Figma](#figma)
-   - [Hosting](#hosting)
-   - [Technologies](#technologies)
+
+- [Figma](#figma)
+- [Hosting](#hosting)
+- [Technologies](#technologies)
 
 ## Overview
 
@@ -18,7 +16,7 @@ The design prototype for this project was created using Figma. You can view the 
 
 ### Hosting
 
-Cryptous project is hosted on GitHub Pages. You can view the live sites here:
+Cryptous project is hosted on GitHub Pages. You can view the live site here:
 
 - [https://private-lazy-val.github.io/cryptous/](https://private-lazy-val.github.io/cryptous/)
 
@@ -31,7 +29,3 @@ The following technologies were used to develop this project:
 - Media queries
 - Responsive web design
 - Flexbox and Grid
-- Git and GitHub
-- Figma
-- Image optimization tools (e.g., tiny png)
-
