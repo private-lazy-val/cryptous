@@ -10,15 +10,13 @@
 
 ### Figma
 
-The design prototype for this project was created using Figma. You can view the Figma prototypes at the following link:
-
 - [Figma prototypes](https://www.figma.com/file/x2sDGkI6ZGiDSYMUcTejqe/Cryptous?node-id=0-1&t=nP9ljIfEWljPK4N1-0)
 
 ### Hosting
 
-Cryptous project is hosted on GitHub Pages. You can view the live site here:
+Cryptous landing web page is hosted on GitHub Pages. You can view the live site here:
 
-- [https://private-lazy-val.github.io/cryptous/](https://private-lazy-val.github.io/cryptous/)
+- [Cryptous](https://private-lazy-val.github.io/cryptous/)
 
 ### Technologies
 
