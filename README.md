@@ -2,11 +2,15 @@
 
 [Overview](#overview)
 
+- [Description](#description)
 - [Figma](#figma)
 - [Hosting](#hosting)
 - [Technologies](#technologies)
 
 ## Overview
+
+### Description
+**Cryptous** is a one-page website about crypos crafted with HTML and CSS.
 
 ### Figma
 
@@ -14,7 +18,7 @@
 
 ### Hosting
 
-Cryptous landing web page is hosted on GitHub Pages. You can view the live site here:
+Cryptous web page is hosted on GitHub Pages. You can view the live site here:
 
 - [Cryptous](https://private-lazy-val.github.io/cryptous/)
 
