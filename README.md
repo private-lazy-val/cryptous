@@ -10,7 +10,7 @@
 ## Overview
 
 ### Description
-**Cryptous** is a one-page website about crypos crafted with HTML and CSS.
+**Cryptous** is a one-page website about crypos built with HTML and CSS.
 
 ### Figma
 
