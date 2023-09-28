@@ -1,20 +1,16 @@
 ## Table of Contents
 
-[Overview](#overview)
-
-- [Description](#description)
+- [Overview](#description)
 - [Figma](#figma)
 - [Hosting](#hosting)
 - [Technologies](#technologies)
 
-## Overview
-
-### Description
+### Overview
 **Cryptous** is a one-page website about crypos built with HTML and CSS.
 
 ### Figma
 
-- [Figma prototypes](https://www.figma.com/file/x2sDGkI6ZGiDSYMUcTejqe/Cryptous?node-id=0-1&t=nP9ljIfEWljPK4N1-0)
+- [Prototypes](https://www.figma.com/file/x2sDGkI6ZGiDSYMUcTejqe/Cryptous?node-id=0-1&t=nP9ljIfEWljPK4N1-0)
 
 ### Hosting
 
