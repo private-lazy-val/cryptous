@@ -1,6 +1,6 @@
 ## Table of Contents
 
-- [Overview](#description)
+- [Overview](#overview)
 - [Figma](#figma)
 - [Hosting](#hosting)
 - [Technologies](#technologies)
